@@ -58,6 +58,12 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'iputs-outputs',
+        title: 'Inputs Ouputs',
+        loadComponent: () =>
+          import('./dashboard/pages/input-output/input-output.component'),
+      },
+      {
         path: '',
         redirectTo: 'control-flow',
         pathMatch: 'full',
