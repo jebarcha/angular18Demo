@@ -58,10 +58,16 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'iputs-outputs',
+        path: 'inputs-outputs',
         title: 'Inputs Ouputs',
         loadComponent: () =>
           import('./dashboard/pages/input-output/input-output.component'),
+      },
+      {
+        path: 'material',
+        title: 'Angular Material',
+        loadComponent: () =>
+          import('./dashboard/pages/material/material.component'),
       },
       {
         path: '',
